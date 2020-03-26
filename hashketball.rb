@@ -172,13 +172,20 @@ def team_names
 end
 
 def player_numbers(team_name)
-  game_hash.map {|court, player_team|
+  game_hash.map do |court, player_team|
     if player_team[:team_name] == team_name
       team.each do |team_info, team_keys|
         if team_info == :players
-          team_keys.each do 
-  }
+          team_keys.each do |player|
+            player[:number]
+          end
+        end
+      end
+    end
+  end
 end
+
+
       
 
 
