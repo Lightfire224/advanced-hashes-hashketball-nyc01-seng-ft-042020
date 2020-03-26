@@ -157,7 +157,7 @@ def shoe_size(players_name)
   end
 end
 
-def shoe_size(players_name)
+def team_colors(players_name)
     game_hash.each do |court, player_team|
       player_team.each do |team_info, player_info|
         if team_info == :players
