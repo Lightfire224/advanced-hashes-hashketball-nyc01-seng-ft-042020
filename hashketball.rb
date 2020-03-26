@@ -134,7 +134,7 @@ end
       player_team.each do |team_info, player_info|
         if team_info == :players
           player_info.each do |player|
-            if player[:player_info] == players_name
+            if player[:player_name] == players_name
               return player[:points]
             end
         end
