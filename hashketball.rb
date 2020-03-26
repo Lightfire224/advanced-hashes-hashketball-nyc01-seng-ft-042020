@@ -159,6 +159,9 @@ end
 
 def team_colors(players_name)
     game_hash.each do |court, player_team|
+      
+    end
+  end
       player_team.each do |team_info, player_info|
         if team_info == :players
           player_info.each do |player|
