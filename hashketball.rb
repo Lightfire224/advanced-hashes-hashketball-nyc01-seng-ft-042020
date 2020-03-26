@@ -160,7 +160,7 @@ end
 def team_colors(team_name)
     game_hash.each do |court, player_team|
       if player_team[:team_name] == team_name
-        player_team[:colors]
+        return player_team[:colors]
       end
     end
   end
