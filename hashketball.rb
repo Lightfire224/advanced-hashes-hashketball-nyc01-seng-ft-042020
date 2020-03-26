@@ -129,7 +129,16 @@ def game_hash
   
 end
 
-def num_points_scored
+def num_points_scored(players_name)
+  game_hash.each do |court, player_team|
+    player_team.each do |team_info, player_info|
+      if team_info == :players
+        player_info.each do |player|
+      end
+    end
+  end
+end
+end
 
 
 
