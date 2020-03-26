@@ -134,6 +134,7 @@ def num_points_scored(players_name)
     player_team.each do |team_info, player_info|
       if team_info == :players
         player_info.each do |player|
+          
       end
     end
   end
