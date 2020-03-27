@@ -188,6 +188,10 @@ def player_numbers(team_name)
 end
 
 def player_stats(players_name)
+  new_hash = {}
+  game_hash.each do |court, player_team|
+    player_team.each do |team_info, team_keys|
+      if team_info == :players
 
       
 
