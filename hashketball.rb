@@ -187,6 +187,7 @@ def player_numbers(team_name)
   arr
 end
 
+def player_stats(players_name)
 
       
 
