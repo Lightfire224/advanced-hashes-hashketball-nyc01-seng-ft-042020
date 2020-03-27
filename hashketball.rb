@@ -192,6 +192,8 @@ def player_stats(players_name)
   game_hash.each do |court, player_team|
     player_team.each do |team_info, team_keys|
       if team_info == :players
+        team_keys do |player|
+          if player[:player_name] == players_name
 
       
 
