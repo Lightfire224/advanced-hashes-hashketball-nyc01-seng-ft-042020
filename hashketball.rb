@@ -192,7 +192,7 @@ def player_stats(find_player)
   game_hash.each do |court, player_team|
     player_team.each do |team_info, team_keys|
       if team_info == :players
-        team_keys do |player|
+        team_keys.each do |player|
           if player[:player_name] == find_player
             stats_hash = player.delete_if do |key,value|
               key == :player_name
