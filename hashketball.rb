@@ -172,17 +172,19 @@ def team_names
 end
 
 def player_numbers(team_name)
-  game_hash.map do |court, player_team|
+  arr = []
+  game_hash.each do |court, player_team|
     if player_team[:team_name] == team_name
       player_team.each do |team_info, team_keys|
         if team_info == :players
           team_keys.each do |player|
-            player[:number]
+            arr.append(player[:number])
           end
         end
       end
     end
   end
+  arr
 end
 
 
