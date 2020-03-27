@@ -206,7 +206,7 @@ def player_stats(find_player)
 end
 
 def big_shoe_rebounds
-  big_shoe = 0
+  shoe = nil
   rebounds = 0
   game_hash.each do |court, player_team|
     player_team[:players].each do |player|
