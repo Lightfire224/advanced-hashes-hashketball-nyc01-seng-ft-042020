@@ -129,12 +129,12 @@ def game_hash
   
 end
 
-  def num_points_scored(players_name)
+  def num_points_scored(find_player)
     game_hash.each do |court, player_team|
       player_team.each do |team_info, player_info|
         if team_info == :players
           player_info.each do |player|
-            if player[:player_name] == players_name
+            if player[:player_name] == find_player
               return player[:points]
             end
         end
@@ -143,12 +143,12 @@ end
   end
 end
 
-def shoe_size(players_name)
+def shoe_size(find_player)
     game_hash.each do |court, player_team|
       player_team.each do |team_info, player_info|
         if team_info == :players
           player_info.each do |player|
-            if player[:player_name] == players_name
+            if player[:player_name] == find_player
               return player[:shoe]
             end
         end
@@ -187,13 +187,13 @@ def player_numbers(team_name)
   arr
 end
 
-def player_stats(players_name)
+def player_stats(find_player)
   new_hash = {}
   game_hash.each do |court, player_team|
     player_team.each do |team_info, team_keys|
       if team_info == :players
         team_keys do |player|
-          if player[:player_name] == players_name
+          if player[:player_name] == find_player
 
       
 
