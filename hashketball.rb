@@ -202,7 +202,7 @@ def player_stats(find_player)
       end
     end
   end
-  new_hash
+  stats_hash
 end
 
       
